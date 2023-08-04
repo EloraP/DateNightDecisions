@@ -1,0 +1,75 @@
+/* Reset some default styles for consistent rendering */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 0.5em 0;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Font Face Declaration for FriedDuck */
+@font-face {
+    font-family: 'FriedDuck';
+    src: url('./assets/fonts/FriedDuck.ttf') format('truetype'),
+         url('./assets/fonts/FriedDuck.otf') format('opentype');
+    /* Add more font formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Applying the FriedDuck Font to an Element */
+body {
+    font-family: 'FriedDuck', Arial, sans-serif;
+}
+
+/* ... other CSS rules ... */
+
+.custom-font {
+    font-family: 'FriedDuck', Arial, sans-serif;
+}
+
+
+
