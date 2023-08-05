@@ -1,3 +1,11 @@
+:root{
+    --primary-color: #CA5C4A;
+    --secondary-color: #FFB6A5;
+    --background-color: #FFD1BD;
+    --text-color: #993854;
+}
+
+
 /* Reset some default styles for consistent rendering */
 body, h1, h2, p {
     margin: 0;
@@ -7,22 +15,29 @@ body, h1, h2, p {
 /* Basic styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    background-color: var(--background-color);
     color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: var(--primary-color);
     color: #fff;
     text-align: center;
-    padding: 1em;
+    margin: 0;
+    padding: 2em 0;
+}
+
+.header-image {
+    display: block;
+    width: 100%; /* Adjust the width to your desired size */
+    height: auto; /* Maintain aspect ratio */
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    background-color: #444;
+    background-color: var(--primary-color);
     padding: 0.5em 0;
 }
 
@@ -46,30 +61,33 @@ section {
 footer {
     text-align: center;
     padding: 1em;
-    background-color: #333;
+    background-color: var(--background-color);
     color: #fff;
 }
 
-/* Font Face Declaration for FriedDuck */
-@font-face {
-    font-family: 'FriedDuck';
-    src: url('./assets/fonts/FriedDuck.ttf') format('truetype'),
-         url('./assets/fonts/FriedDuck.otf') format('opentype');
-    /* Add more font formats if necessary */
-    font-weight: normal;
-    font-style: normal;
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
 }
 
-/* Applying the FriedDuck Font to an Element */
-body {
-    font-family: 'FriedDuck', Arial, sans-serif;
+/* Set the container to full viewport height */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-/* ... other CSS rules ... */
-
-.custom-font {
-    font-family: 'FriedDuck', Arial, sans-serif;
+/* Push footer to the bottom */
+.main-content {
+    flex-grow: 1;
+    padding: 20px; /* Add some spacing */
 }
 
-
+.footer {
+   
+    color: var(--text-color);
+    text-align: center;
+    padding: 40px;
+}
 
